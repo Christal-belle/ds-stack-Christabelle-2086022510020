@@ -26,14 +26,14 @@ public class RPN {
                         result = a * b;
                         break;
                     case "/":
-                        result = a / b; // integer division
+                        result = a / b; 
                         break;
                 }
 
                 stack.push(result);
 
             } else {
-                stack.push(Integer.parseInt(t));
+                stack.push(Integer.valueOf(t));
             }
         }
 
